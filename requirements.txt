@@ -1,0 +1,9 @@
+# project requirements
+ctransformers
+easydict
+faiss-gpu
+langchain-community
+sentence-transformers
+pypdf
+PyQt6
+pyyaml
