@@ -2,6 +2,7 @@
 import yaml
 from easydict import EasyDict
 
+
 class ConfigModel:
     """COnfig model is class containing storage update and safe of application configuration"""
 
@@ -26,3 +27,8 @@ class ConfigModel:
         """
         if key in self.config:
             self.config[key] = value
+
+    def save_config(self) -> None:
+        """saves the config either upon shutdown or when user requests change through ui"""
+        with open('config/config.yml', 'w', encoding='utf8') as ymlfile:
+            yaml.dump(dict(self.config), ymlfile, default_flow_style=False)

@@ -4,6 +4,11 @@ easydict
 faiss-gpu
 langchain-community
 sentence-transformers
+openpyxl
+pandas
+PyQt6 # ui was not finished
 pypdf
-PyQt6
+python-docx 
+python-pptx
 pyyaml
+unstructured

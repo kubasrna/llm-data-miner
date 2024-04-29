@@ -156,3 +156,4 @@ cython_debug/
 models
 logs
 data
+vectorstore

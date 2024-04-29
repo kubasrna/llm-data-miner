@@ -61,7 +61,7 @@ class LLMModel:
         self.qa_prompt.input_variables = ['context', 'question']
 
         embeddings = HuggingFaceEmbeddings(model_name=config.EMBEDDINGS,
-                                           model_kwargs={'device': "cuda" if torch.cuda.is_available() else "cpu"})
+                                           model_kwargs={'device': config.DEVICE})
 
         vectordb = FAISS.load_local(
             config.DB_FAISS_PATH, embeddings, allow_dangerous_deserialization=True)
