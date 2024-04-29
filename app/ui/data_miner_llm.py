@@ -1,9 +1,7 @@
 """DataMiner LLM main window"""
-from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout
+from PyQt6.QtWidgets import QMainWindow
 
-
-class MainWindow(QWidget):
+class MainWindow(QMainWindow):
     """Main window of the app"""
 
     def __init__(self) -> None:
@@ -12,17 +10,4 @@ class MainWindow(QWidget):
 
     def init_ui(self) -> None:
         """initializesUI"""
-        # Create widgets
-        label = QLabel('Hello, PyQt6!')
-        label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
-        # Create layout and add widgets
-        layout = QVBoxLayout()
-        layout.addWidget(label)
-
-        # Set the layout
-        self.setLayout(layout)
-
-        # Set window title and size
-        self.setWindowTitle('My PyQt6 App')
-        self.resize(300, 200)
+        
