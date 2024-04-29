@@ -6,7 +6,6 @@ langchain-community
 sentence-transformers
 openpyxl
 pandas
-PyQt6 # ui was not finished
 pypdf
 python-docx 
 python-pptx

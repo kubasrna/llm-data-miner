@@ -7,16 +7,12 @@ from app.model.config_model import ConfigModel
 from app.model.data_source_model import DataSourceModel
 from app.model.llm_model import LLMModel
 
-from app.ui.data_miner_llm import MainWindow
-
-
 class ApplicationPresenter:
     """Application presenter is central part of the MVP pattern."""
 
     def __init__(self, config_model: ConfigModel,
                  data_source_model: DataSourceModel,
-                 llm_model: LLMModel,
-                 main_window: MainWindow) -> None:
+                 llm_model: LLMModel) -> None:
 
         self.config_model = config_model
         self.data_source_model = data_source_model
