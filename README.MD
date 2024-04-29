@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 After this you should be ready dependencies-wise. Steps to provide model for the app are:
 
-1. Next step is download .ggub format of your favourite llm 
+1. Next step is download .gguf format of your favourite llm 
 1. Place is within models folder within llm-data-miner repo.
 1. Go to config folder and open config.yml in your favourite text editor
 1. Update <b>MODEL_BIN_PATH</b> so that it matches with name of your model
