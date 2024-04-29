@@ -17,7 +17,6 @@ class ApplicationPresenter:
         self.config_model = config_model
         self.data_source_model = data_source_model
         self.llm_model = llm_model
-        self.view = main_window
 
     def change_folder(self, path: str) -> None:
         """changes directory to the main.py folder"""
